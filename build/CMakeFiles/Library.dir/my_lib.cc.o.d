@@ -1,6 +1,7 @@
-CMakeFiles/Executable.dir/main.cc.o: \
- /home/luphiwe/Projects/HelloWorld_CPP/main.cc /usr/include/stdc-predef.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+CMakeFiles/Library.dir/my_lib.cc.o: \
+ /home/luphiwe/Projects/HelloWorld_CPP/my_lib.cc \
+ /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
