@@ -1,6 +1,13 @@
 # HelloWorld_CPP
 First project for C/C++ where a I compile main.cc to print hello world
 
+# Basic Projects
+ - : Create Source and CMakeLists.txt
+ - : mkdir build
+ - : cd build
+ - : cmake ..     (Generating the build Files/ Configure the projects)
+ - : cmake --build .
+
 # Linux Software Installation
 - pre-commands
     - sudo apt-get update
