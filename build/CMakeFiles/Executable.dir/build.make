@@ -73,15 +73,15 @@ CMakeFiles/Executable.dir/main.cc.o: CMakeFiles/Executable.dir/flags.make
 CMakeFiles/Executable.dir/main.cc.o: ../main.cc
 CMakeFiles/Executable.dir/main.cc.o: CMakeFiles/Executable.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luphiwe/CXX-project/HelloWorld_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Executable.dir/main.cc.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Executable.dir/main.cc.o -MF CMakeFiles/Executable.dir/main.cc.o.d -o CMakeFiles/Executable.dir/main.cc.o -c /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Executable.dir/main.cc.o -MF CMakeFiles/Executable.dir/main.cc.o.d -o CMakeFiles/Executable.dir/main.cc.o -c /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc
 
 CMakeFiles/Executable.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Executable.dir/main.cc.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc > CMakeFiles/Executable.dir/main.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc > CMakeFiles/Executable.dir/main.cc.i
 
 CMakeFiles/Executable.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Executable.dir/main.cc.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc -o CMakeFiles/Executable.dir/main.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luphiwe/CXX-project/HelloWorld_CPP/main.cc -o CMakeFiles/Executable.dir/main.cc.s
 
 # Object files for target Executable
 Executable_OBJECTS = \
@@ -92,6 +92,7 @@ Executable_EXTERNAL_OBJECTS =
 
 Executable: CMakeFiles/Executable.dir/main.cc.o
 Executable: CMakeFiles/Executable.dir/build.make
+Executable: libLibrary.a
 Executable: CMakeFiles/Executable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luphiwe/CXX-project/HelloWorld_CPP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Executable.dir/link.txt --verbose=$(VERBOSE)
