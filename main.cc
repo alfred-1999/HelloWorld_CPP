@@ -1,8 +1,8 @@
-#include <iostream>
+#include "my_lib.h"
 
-int main()
+int main(int argc, char const *argv[])
 {
     /* code */
-    std::cout << "Hello Wolrd\n";
+    print_hello_world();
     return 0;
 }
