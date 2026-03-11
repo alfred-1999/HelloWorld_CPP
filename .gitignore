@@ -1,2 +1,19 @@
-/build/
-/.vscode/
+build/
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Compiled binaries
+*.o
+*.out
+*.exe
+*.so
+*.a
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
