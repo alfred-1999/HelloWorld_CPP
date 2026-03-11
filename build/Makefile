@@ -126,7 +126,7 @@ Library: cmake_check_build_system
 
 # fast build rule for target.
 Library/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/build
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Library.dir/build.make src/CMakeFiles/Library.dir/build
 .PHONY : Library/fast
 
 #=============================================================================
@@ -139,56 +139,8 @@ Executable: cmake_check_build_system
 
 # fast build rule for target.
 Executable/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/build
+	$(MAKE) $(MAKESILENT) -f app/CMakeFiles/Executable.dir/build.make app/CMakeFiles/Executable.dir/build
 .PHONY : Executable/fast
-
-main.o: main.cc.o
-.PHONY : main.o
-
-# target to build an object file
-main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.o
-.PHONY : main.cc.o
-
-main.i: main.cc.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.i
-.PHONY : main.cc.i
-
-main.s: main.cc.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Executable.dir/build.make CMakeFiles/Executable.dir/main.cc.s
-.PHONY : main.cc.s
-
-my_lib.o: my_lib.cc.o
-.PHONY : my_lib.o
-
-# target to build an object file
-my_lib.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.o
-.PHONY : my_lib.cc.o
-
-my_lib.i: my_lib.cc.i
-.PHONY : my_lib.i
-
-# target to preprocess a source file
-my_lib.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.i
-.PHONY : my_lib.cc.i
-
-my_lib.s: my_lib.cc.s
-.PHONY : my_lib.s
-
-# target to generate assembly for a file
-my_lib.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Library.dir/build.make CMakeFiles/Library.dir/my_lib.cc.s
-.PHONY : my_lib.cc.s
 
 # Help Target
 help:
@@ -200,12 +152,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Executable"
 	@echo "... Library"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... my_lib.o"
-	@echo "... my_lib.i"
-	@echo "... my_lib.s"
 .PHONY : help
 
 
