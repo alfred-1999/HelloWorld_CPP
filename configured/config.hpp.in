@@ -1,0 +1,15 @@
+// this file will be touched by CMake to edit/copy this file to other directries.
+#pragma once
+
+
+#include <cstdint>
+#include <string_view>
+
+// '@' or '@PROJECT_NAME@' will be replaced by CMake with the actual project name during the build process. -> 'CppProject'
+static constexpr std::string_view project_name = "@PROJECT_NAME@";
+static constexpr std::string_view project_version = "@PROJECT_VERSION@";
+//                                                                                  1.0.0
+//                                                                                  MJ.MN.PA
+static constexpr std::int32_t project_version_major{@PROJECT_VERSION_MAJOR@};   // code base breaking changes
+static constexpr std::int32_t project_version_minor{@PROJECT_VERSION_MINOR@};   // new features, but backward compatible
+static constexpr std::int32_t project_version_patch{@PROJECT_VERSION_PATCH@};   // bug fixes, but backward compatible

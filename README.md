@@ -27,3 +27,13 @@ First project for C/C++ where a I compile main.cc to print hello world
     - sudo apt-get install llvm clang-format clang-tidy
     - sudo apt-get install curl zip unzip tar
     - sudo apt-get install graphviz
+
+
+# Configure TOPIC (/build):
+- cmake .. -D COMPILE_EXECUTABLE=ON
+- cd app/ && ./Executable
+    ```sh
+         Project Name: CppProject
+         Project Version: 1.0.0
+         Hello World 
+         This is a C++20 project

@@ -12,6 +12,8 @@ set (EXECUTABLE_NAME Executable)
 
 option(COMPILE_EXECUTABLE "Compile the executable" OFF)
 
+add_subdirectory(configured)
+
 add_subdirectory(src)
 if (COMPILE_EXECUTABLE)
         add_subdirectory(app)
