@@ -4,7 +4,7 @@ function(add_git_submodule dir)
         message(STATUS "Adding git submodule ${dir}")
         execute_process(COMMAND ${GIT_EXECUTABLE}
              submodule update --init --recursive -- ${dir}
-                        WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+                        WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
                         RESULT_VARIABLE result)
         if (result)
             message(FATAL_ERROR "Failed to add git submodule ${dir}")
