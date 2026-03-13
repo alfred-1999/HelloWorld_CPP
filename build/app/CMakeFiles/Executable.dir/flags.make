@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/luphiwe/CXX-project/HelloWorld_CPP/src/. -I/home/luphiwe/CXX-project/HelloWorld_CPP/build/configured_files/include
+CXX_INCLUDES = -I/home/luphiwe/CXX-project/HelloWorld_CPP/src/. -I/home/luphiwe/CXX-project/HelloWorld_CPP/build/configured_files/include -I/home/luphiwe/CXX-project/HelloWorld_CPP/external/json/include
 
 CXX_FLAGS = -std=c++17
 

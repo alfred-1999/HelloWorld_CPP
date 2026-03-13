@@ -1,5 +1,7 @@
 /home/luphiwe/CXX-project/HelloWorld_CPP/build/CMakeFiles/edit_cache.dir
 /home/luphiwe/CXX-project/HelloWorld_CPP/build/CMakeFiles/rebuild_cache.dir
+/home/luphiwe/CXX-project/HelloWorld_CPP/build/external/json/CMakeFiles/edit_cache.dir
+/home/luphiwe/CXX-project/HelloWorld_CPP/build/external/json/CMakeFiles/rebuild_cache.dir
 /home/luphiwe/CXX-project/HelloWorld_CPP/build/configured/CMakeFiles/edit_cache.dir
 /home/luphiwe/CXX-project/HelloWorld_CPP/build/configured/CMakeFiles/rebuild_cache.dir
 /home/luphiwe/CXX-project/HelloWorld_CPP/build/src/CMakeFiles/Library.dir
