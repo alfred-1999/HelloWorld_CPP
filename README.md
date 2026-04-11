@@ -37,3 +37,7 @@ First project for C/C++ where a I compile main.cc to print hello world
          Project Version: 1.0.0
          Hello World 
          This is a C++20 project
+
+
+# CMake, Tests and Tooling 
+- Main <- lib -> Unit <- Test

@@ -14,6 +14,22 @@ option(COMPILE_EXECUTABLE "Compile the executable" OFF)
 
 set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 # set (CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+
+FetchContent_Declare(
+    cxxopts
+    GIT_REPOSITORY https://github.com/jarro2783/cxxopts
+        GIT_TAG v3.0.0
+        GIT_SHALLOW TRUE
+)
+FetchContent_MakeAvailable(cxxopts)
+FetchContent_Declare(
+    Catch2
+    GIT_REPOSITORY https://github.com/catchorg/Catch2
+        GIT_TAG v2.13.9
+        GIT_SHALLOW TRUE
+)
+FetchContent_MakeAvailable(Catch2)
+
 include(AddGitSubmodule)
 
 add_git_submodule(external/json)
@@ -21,6 +37,8 @@ add_git_submodule(external/json)
 add_subdirectory(configured)
 # add_subdirectory(external)
 add_subdirectory(src)
+add_subdirectory(tests)
+
 if (COMPILE_EXECUTABLE)
         add_subdirectory(app)
 else()

@@ -4,6 +4,10 @@
 // include the generated config.hpp file
 #include "config.hpp"
 
+/**
+ * @brief Main function of the application
+ */
+
 int main(int argc, char const *argv[])
 {
     /* code */
